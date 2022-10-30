@@ -1,0 +1,89 @@
+.popular{
+    padding: clamp(6.25rem, 5.159rem + 5.45vw, 10rem) 0;
+    background-image: url(../images/slider/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    &__title{
+        margin-bottom: 40px;
+    }
+    @media (max-width: 660px){
+        text-align: center;
+    }
+    &__slider{
+        position: relative;
+       
+    }
+    &__link{
+        text-align: center;
+        margin-top: 45px;
+    }
+    &__slider-buttons{
+        position: absolute;
+        top: 30%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 1800px){
+            top: -100px;
+            width: auto;
+            right: 0%;
+            gap: 30px;
+
+        }
+        @media (max-width: 660px){
+            display: none;
+        }
+    }
+    &__slider-button-prev{
+        position: absolute;
+        content: '';
+	    left: -10%;
+    }
+    &__slider-button-next{
+        position: absolute;
+	    right: -10%;
+	    transform: rotate(180deg);
+    }
+}
+.swiper{
+    overflow: hidden;
+    &-wrapper{
+        display: inline-flex;
+    }
+}
+.popular{
+    &-title{
+        margin-top: 20px;
+        font-weight: 600;
+		font-size: 26px;
+		line-height: 1.26;
+		letter-spacing: 0.01em;
+		text-transform: capitalize;
+    }
+    &-icons{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        @media (max-width: 660px){
+            justify-content: center;
+        }
+    }
+    &-icon{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+.popular__slider-button{
+    width: 78px;
+    height: 78px;
+    background-image: url(../images/slider/Arrow-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $WhiteColor;
+    border-radius: 50%;
+    @media (max-width: 1800px){
+        position: static;
+    }
+}

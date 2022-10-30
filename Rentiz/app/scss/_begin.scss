@@ -1,0 +1,13 @@
+.begin{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        align-items: center;
+        flex: 0 1 50%;
+        padding: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem) 0 clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem) 0;
+    }
+    &__link{
+        margin-top: 50px;
+    }
+}

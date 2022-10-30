@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+@import 'global';
+@import 'libs';
+@import 'reset';
+@import 'vars';
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'featured';
+@import 'popular';
+@import 'why';
+@import 'review';
+@import 'begin';
+html, body{ 
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $mainColor;
+    color: $textColor;
+    font-weight: 400;
+}
+body.lock{
+    overflow: hidden;
+}
+.text{
+    color: $textColor;
+    line-height: calc(31px/18px*100%);
+    font-size: 18px;
+}
+.title-main{
+    font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
+    line-height: calc(86px / 68px * 100%);
+    font-weight: 600;
+    color: $WhiteColor;
+    text-transform: capitalize;
+}
+.title{
+    font-size: clamp(1.875rem, 1.548rem + 1.64vw, 3rem);
+    line-height: calc(60px / 48px * 100%);
+    color: $WhiteColor;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.link{
+    display: inline-block;
+    padding: 22px 42px;
+    background-color: $accentColor;
+    transition: background-color 0.3s ease-out;
+    color: $WhiteColor;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 20px;
+    &:hover{
+        background-color: darken($color: $accentColor, $amount: 10%);
+    }
+}

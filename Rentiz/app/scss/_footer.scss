@@ -1,0 +1,35 @@
+.footer{
+    background-color: $DarkGreenColor;
+    &__box{
+        padding: clamp(2.5rem, 0.682rem + 9.09vw, 8.75rem) 0 clamp(2.5rem, 1.409rem + 5.45vw, 6.25rem) 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+		gap: clamp(1.875rem, -14.494rem + 26.19vw, 8.75rem);
+        border-bottom: 1px solid gray;
+    }
+}
+.navigation{
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    &__link{
+        color: $WhiteColor;
+        transition: all 0.3s ease-out;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.box{
+    &__title{
+        margin-bottom: 15px;
+    }
+}
+.copyright{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+}

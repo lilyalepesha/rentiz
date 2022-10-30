@@ -1,0 +1,28 @@
+$containerPadding: 15px;
+$minWidth: 320px;
+$maxWidth: 1450px;
+$md1: $maxWidth;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px; 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+.container{
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 0 $containerPadding;
+}
+.container-fluid{
+    max-width: 1920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}

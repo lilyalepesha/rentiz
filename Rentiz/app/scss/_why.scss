@@ -1,0 +1,57 @@
+.why{
+    padding: clamp(6.25rem, 5.159rem + 5.45vw, 10rem) 0 clamp(3.75rem, 3.114rem + 3.18vw, 5.938rem) 0;
+    &__title{
+        margin-bottom: clamp(1.875rem, 1.33rem + 2.73vw, 3.75rem);
+        text-align: center;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        gap: clamp(3.75rem, 3.023rem + 3.64vw, 6.25rem);
+        flex: 0 1 calc(380px / 1420px * 100%);
+        @media (max-width: $md3){
+            flex-direction: column;
+        }
+    }
+    &__box-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__box-title{
+        margin-top: 36px;
+    }
+    &__box-img{
+        width: 180px;
+        position: relative;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before{
+            content: '';
+            height: 180px;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #1AA090;
+            opacity: 0.12;
+            display: block;
+            position: absolute;
+        }
+        img{
+            background-position: center;
+        }
+    }
+    &__box-content{
+        text-align: center;
+    }
+    &__box-title{
+        font-size: 26px;
+        color: $WhiteColor;
+        line-height: calc(33px / 26px * 100%);
+        margin-bottom: 11px;
+        font-weight: 600;
+    }
+}
